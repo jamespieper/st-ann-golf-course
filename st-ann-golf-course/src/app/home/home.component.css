@@ -1,0 +1,43 @@
+
+
+h1 {
+    text-align: center;
+}
+
+.banner {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.banner-buttons {
+
+    text-align: center;
+}
+
+button {
+
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin-top: 10%;
+    margin-bottom: 10%;    
+
+    border: 1px solid black;
+}
+
+div {
+    display: block;
+    text-align: center;
+}
+    
+    

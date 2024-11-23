@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Set a basic font */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  /* Styling the nav bar */
+  nav {
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Vertical padding */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list bullets */
+    text-align: center; /* Center the list items */
+  }
+  
+  ul li {
+    display: inline-block; /* Display list items in a row */
+    margin: 0 20px; /* Space between the list items */
+  }
+
+  ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* White text color */
+    font-size: 18px; /* Set font size */
+    padding: 8px 16px; /* Space around the text */
+    display: inline-block; /* Make the link clickable */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  }
+  
+  /* Hover effect for links */
+  ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #ff0; /* Yellow text on hover */
+    border-radius: 5px; /* Rounded corners */
+  }

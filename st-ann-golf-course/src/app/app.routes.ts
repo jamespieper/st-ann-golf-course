@@ -5,7 +5,7 @@ import { TeeTimePageComponent } from './tee-time-page/tee-time-page.component';
 export const routes: Routes = [
 
     { path: '', redirectTo: '/home', pathMatch: 'full'},
-    { path: 'home', component: HomeComponent},
+    { path: 'home', component: HomeComponent, title: 'hOmE'},
     { path: 'tee-time-page', component: TeeTimePageComponent, title: 'Tee tImEs'},
     //add paths for other Components
 ];

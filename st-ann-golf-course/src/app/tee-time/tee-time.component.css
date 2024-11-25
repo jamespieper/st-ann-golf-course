@@ -1,0 +1,70 @@
+
+
+
+
+main {
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width:300px;
+    height:150px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    
+}
+
+button {
+    width: 150px;
+    height: 25px;
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;   
+    
+    margin-bottom: 10px;
+
+    text-align: right;
+
+    padding:10px;
+    
+    
+    
+}
+
+.card-mid {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-bot {
+    text-align: center;
+}
+
+.time {
+    text-align: left;   
+}
+
+
+
+
+
+
+    
+    

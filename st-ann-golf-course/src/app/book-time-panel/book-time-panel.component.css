@@ -1,0 +1,81 @@
+
+.book-time-panel {
+
+    width:600px;
+    border: 1px solid black;
+}
+
+.book-time-panel-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;       
+}
+
+
+.book-time-panel-selection {
+    width: 90%;
+    border: 1px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.book-time-panel-selection-bot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    padding: 5px;
+    
+}
+
+.book-time-panel-select-golfers button {
+    width: 75px;
+    padding:5px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+.book-time-panel-confirm {
+    margin-top: 25px;
+}
+
+#book-time-panel-selection-holes {
+
+    margin-left: 50px;
+}
+
+#book-time-panel-x {
+
+    width:25px;
+    height: 25px;
+    
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: auto;
+    
+}
+
+.book-time-panel-confirm {
+    text-align: center;
+    width: 90%;
+    padding:5px;
+}
+
+#book-time-panel-add-to-cart {
+
+    margin-bottom: 5px;
+    background-color:navy;
+    color:white;
+    
+}
+
+#book-time-panel-close {
+    background-color:white;
+    color:navy;
+}

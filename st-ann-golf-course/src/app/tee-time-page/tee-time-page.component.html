@@ -4,6 +4,15 @@
 
 <app-filter-panel></app-filter-panel>
 
+
+<hr>
+<div *ngFor="let teeTime of teeTimes">
+
+    <p>{{ teeTime.time }} - Price: ${{ teeTime.price }} - Cart: {{ teeTime.cart }} - Slots Left: {{ teeTime.slotsLeft }}</p>
+</div>
+<hr>
+
+
 <app-tee-time></app-tee-time>
 
 <app-book-time-panel></app-book-time-panel>

@@ -12,6 +12,14 @@
 
     
     <!-- CALENDAR component -->
+     <!-- <app-calendar></app-calendar> -->
+
+     <mat-card>
+        <mat-calendar [(selected)]="selected"></mat-calendar>
+      </mat-card>
+      <p>Selected date: {{selected()}}</p>
+      
+     
 
     <section class="filter-time">
 
@@ -36,7 +44,11 @@
         </div>
 
         <div class="filter-price-content">
-            <input type="range"/>
+            <mat-slider min="0" max="100">
+                <input value="0" matSliderStartThumb>
+                <input value="100" matSliderEndThumb>
+              </mat-slider>
+              
         </div>
 
     </section>
@@ -49,11 +61,16 @@
         </div>
 
         <div class="filter-golfers-content">
-            <button>Any</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
+
+            <mat-chip-set>
+
+                <mat-chip>Any</mat-chip>
+                <mat-chip>1</mat-chip>
+                <mat-chip>2</mat-chip>
+                <mat-chip>3</mat-chip>
+                <mat-chip>4</mat-chip>
+            </mat-chip-set>
+            
         </div>
 
     </section>

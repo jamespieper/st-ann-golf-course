@@ -1,35 +1,70 @@
 
-<header class="time">
 
-</header>
+<mat-card appearance="outlined">
 
-<main>
-
-
-    <section class="card-top">
-
-        <p class="time">7:00 AM</p>
-
-        <p class="num-golfers"><img src="/st-ann-golf-course/public/num_golfers.png"/> 1 - 4</p>
-
-        <p class="num-holes"><img src="/st-ann-golf-course/public/flag.png"/> 9</p>
-
+    <mat-card-header >
+        <section class="card-top">
     
-    </section>
-
-
-    <section class="card-mid">
-        
-        <p>St. Ann Golf Course</p>
-
-        <p class="price">$15 - $22</p>
-    </section>
-
-    <section class="card-bot">
-        
-        <button> Book Time</button>
-    </section>
-
+            <p class="time">{{time}}</p>
     
+            <p class="num-golfers"><img src="/num_golfers.png"/>{{slotsLeft}}</p>
+            
+            <p class="num-holes"><img src="/flag.png"/> 9</p>
+            
+        
+        </section>
+    </mat-card-header>
 
-</main>
+    <mat-card-content>
+        <section class="card-mid">
+            
+            <p>St. Ann Golf Course</p>
+    
+            <p class="price">${{price}}.00</p>
+        </section>
+    
+        <section class="card-bot">
+            
+            <button> Book Time</button>
+        </section>
+
+    </mat-card-content>
+
+</mat-card>
+<!-- <div class="tee-time-card">
+    <header class="time">
+
+    </header>
+    
+    <main>
+    
+    
+        <section class="card-top">
+    
+            <p class="time">{{time}}</p>
+    
+            <p class="num-golfers"><img src="/st-ann-golf-course/public/num_golfers.png"/>{{slotsLeft}}</p>
+    
+            <p class="num-holes"><img src="/st-ann-golf-course/public/flag.png"/> 9</p>
+            
+        
+        </section>
+    
+    
+        <section class="card-mid">
+            
+            <p>St. Ann Golf Course</p>
+    
+            <p class="price">${{price}}.00</p>
+        </section>
+    
+        <section class="card-bot">
+            
+            <button> Book Time</button>
+        </section>
+    
+        
+    
+    </main>
+</div> -->
+

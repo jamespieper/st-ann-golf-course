@@ -1,18 +1,22 @@
-<p>Tee time page!</p>
+<h1>Book Your Tee Time</h1>
 
+<div class="tee-time-page-wrapper">
 
+    <div class="tee-time-page-component-content">
 
-<app-filter-panel></app-filter-panel>
-
-
-<hr>
-<div *ngFor="let teeTime of teeTimes">
-
-    <p>{{ teeTime.time }} - Price: ${{ teeTime.price }} - Cart: {{ teeTime.cart }} - Slots Left: {{ teeTime.slotsLeft }}</p>
+        <app-filter-panel></app-filter-panel>
+    
+        <div class="tee-time-grid">
+            
+            <app-tee-time 
+                *ngFor="let teeTime of teeTimes" 
+                [time]="teeTime.time"
+                [slotsLeft]="teeTime.slotsLeft.toString()"
+                [price]="teeTime.price.toString()"
+            ></app-tee-time>
+        </div>
+    </div>
+    
+    <!-- <app-book-time-panel></app-book-time-panel> -->
 </div>
-<hr>
 
-
-<app-tee-time></app-tee-time>
-
-<app-book-time-panel></app-book-time-panel>

@@ -1,91 +1,95 @@
 
 
 
-<header class="filter-header">
+<div class="filter-panel-component">
+    <header class="filter-header">
 
-    <p>Filters</p>
-    <button>Reset All</button>
-</header>
-
-
-<main class="filter-content">
-
+        <span>Filters</span>
+        <button mat-button>Reset All</button>
+    </header>
     
-    <!-- CALENDAR component -->
-     <!-- <app-calendar></app-calendar> -->
-
-     <mat-card>
-        <mat-calendar [(selected)]="selected"></mat-calendar>
-      </mat-card>
-      <p>Selected date: {{selected()}}</p>
-      
-     
-
-    <section class="filter-time">
-
-        <div class="filter-time-header">
-            <span>Time</span>
-            <button>Reset</button>
-        </div>
-
-        <div class="filter-time-content">
-            <select title="Start"></select>
-            <span> - </span>
-            <select title="End"></select>
-        </div>
+    
+    <main class="filter-content">
+    
         
-    </section>
-
-    <section class="filter-price">
-
-        <div class="filter-price-header">
-            <span>Price</span>
-            <button>Reset</button>
-        </div>
-
-        <div class="filter-price-content">
-            <mat-slider min="0" max="100">
-                <input value="0" matSliderStartThumb>
-                <input value="100" matSliderEndThumb>
-              </mat-slider>
-              
-        </div>
-
-    </section>
-
-    <section class="filter-golfers">
-
-        <div class="filter-golfers-header">
-            <span>Golfers</span>
-            <button>Reset</button>
-        </div>
-
-        <div class="filter-golfers-content">
-
-            <mat-chip-set>
-
-                <mat-chip>Any</mat-chip>
-                <mat-chip>1</mat-chip>
-                <mat-chip>2</mat-chip>
-                <mat-chip>3</mat-chip>
-                <mat-chip>4</mat-chip>
-            </mat-chip-set>
+        <!-- CALENDAR component -->
+         <!-- <app-calendar></app-calendar> -->
+    
+         <mat-card>
+            <mat-calendar [(selected)]="selected"></mat-calendar>
+          </mat-card>
+          <p>Selected date: {{selected()}}</p>
+          
+         
+    
+        <section class="filter-time">
+    
+            <div class="filter-time-header">
+                <span>Time</span>
+                <button mat-button>Reset</button>
+            </div>
+    
+            <div class="filter-time-content">
+                <select title="Start"></select>
+                <span> - </span>
+                <select title="End"></select>
+            </div>
             
-        </div>
+        </section>
+    
+        <section class="filter-price">
+    
+            <div class="filter-price-header">
+                <span>Price</span>
+                <button mat-button>Reset</button>
+            </div>
+    
+            <div class="filter-price-content">
+                <mat-slider min="0" max="100">
+                    <input value="0" matSliderStartThumb>
+                    <input value="100" matSliderEndThumb>
+                  </mat-slider>
+                  
+            </div>
+    
+        </section>
+    
+        <section class="filter-golfers">
+    
+            <div class="filter-golfers-header">
+                <span>Golfers</span>
+                <button mat-button>Reset</button>
+            </div>
+    
+            <div class="filter-golfers-content">
+    
+                <mat-chip-set>
+    
+                    <mat-chip>Any</mat-chip>
+                    <mat-chip>1</mat-chip>
+                    <mat-chip>2</mat-chip>
+                    <mat-chip>3</mat-chip>
+                    <mat-chip>4</mat-chip>
+                </mat-chip-set>
+                
+            </div>
+    
+        </section>
+    
+        <section class="filter-transportation">
+            <div class="filter-golfers-header">
+                <span>Transportation</span>
+                <button mat-button>Reset</button>
+            </div>
+    
+            <div class="filter-golfers-content">
+                <mat-chip>Cart</mat-chip>
+                <mat-chip>Walk</mat-chip>
+                <mat-icon aria-hidden="false" fontIcon="home"></mat-icon>
+                
+            </div>
+        </section>
+    
+    </main>
+</div>
 
-    </section>
-
-    <section class="filter-transportation">
-        <div class="filter-golfers-header">
-            <span>Transportation</span>
-            <button>Reset</button>
-        </div>
-
-        <div class="filter-golfers-content">
-            <button>Cart</button>
-            <button>Walk</button>
-            
-        </div>
-    </section>
-
-</main>

@@ -1,0 +1,71 @@
+
+
+img {
+    
+
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.holes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.holes-grid div {
+    /* border: 1px solid black; */
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+    
+
+.hole-card-wrapper {
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole-card {
+    width: 50%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+
+    justify-content: center;
+
+    
+    
+}
+
+.hole-card-header {
+    
+}
+
+.hole-card-content {
+
+}
+
+.hole-card-footer {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}

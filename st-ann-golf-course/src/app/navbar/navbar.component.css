@@ -1,3 +1,11 @@
+:root {
+  --green: #1b512d;
+  --beige: #c5baaf;
+  --brown: #86615C;
+  --navy: #0D1321;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,35 +16,87 @@
     font-family: Arial, sans-serif; /* Set a basic font */
     background-color: #f4f4f4; /* Light background color */
   }
+
+  img {
+    
+    height:75px;
+  }
   
   /* Styling the nav bar */
   nav {
-    background-color: #333; /* Dark background color */
+    background-color: #1b512d; /* Dark background color */
     padding: 10px 0; /* Vertical padding */
-  }
-  
-  ul {
-    list-style-type: none; /* Remove default list bullets */
-    text-align: center; /* Center the list items */
-  }
-  
-  ul li {
-    display: inline-block; /* Display list items in a row */
-    margin: 0 20px; /* Space between the list items */
+    
   }
 
-  ul li a {
+  a {
     text-decoration: none; /* Remove underlines from links */
-    color: white; /* White text color */
+    color: #c5baaf; /* White text color */
     font-size: 18px; /* Set font size */
-    padding: 8px 16px; /* Space around the text */
+    padding: 20px /*16px*/; /* Space around the text */
+    margin-left: 20px;
     display: inline-block; /* Make the link clickable */
     transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
   }
   
   /* Hover effect for links */
-  ul li a:hover {
-    background-color: #555; /* Darker background on hover */
-    color: #ff0; /* Yellow text on hover */
+  a:hover {
+    background-color: #2a7d45; /* Darker background on hover */
+    color: #89817a; /* Yellow text on hover */
     border-radius: 5px; /* Rounded corners */
   }
+
+  .navbar {
+
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20rem;
+    
+  }
+
+  .navbar-links {
+    display: flex;
+    
+  }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    
+    z-index: 1;
+    list-style-type: none;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+
+
+.dropdown-menu li a {
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+

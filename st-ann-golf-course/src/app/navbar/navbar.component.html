@@ -1,15 +1,39 @@
 <nav class="navbar">
 
-    <div class="navbar-logo">
-        <img src="/logo.JPG" alt="SAGC Logo" />
-
+    <img src="/logo-white.png" alt="SAGC Logo" />
+    
+    <div class="navbar-links">
+        <a routerLink="/">Home</a>
+        <div class="dropdown">
+            <a class="dropdown-toggle">Course&nbsp;&nbsp;&#x25BC;</a>
+            <ul class="dropdown-menu">
+                <li><a href="/course-details">Course Details</a></li>
+                <li><a routerLink="/scorecard">Scorecard</a></li>
+            </ul>
+    
+        </div>
+        <a [routerLink]="['/tee-time-page']">Tee Times</a>
+        <a routerLink="/events">Events</a>
+        <a routerLink="/contact">Contact Us</a>
     </div>
+    
 
+    <!--
     <ul class="navbar-links">
+        <img src="/logo2.png" alt="SAGC Logo" />
         <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/course">Course</a></li>
+        
+        <li class="dropdown">
+            <a class="dropdown-toggle">Course&nbsp;&nbsp;&#x25BC;</a>
+            <ul class="dropdown-menu">
+                <li><a href="/course-details">Course Details</a></li>
+                <li><a routerLink="/scorecard">Scorecard</a></li>
+            </ul>
+        </li>
+
         <li><a [routerLink]="['/tee-time-page']">Tee Times</a></li>
         <li><a routerLink="/events">Events</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/events">Events</a></li>
     </ul>
+    -->
 </nav>

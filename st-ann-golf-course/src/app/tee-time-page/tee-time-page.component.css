@@ -4,26 +4,25 @@ h1 {
 
 .tee-time-page-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
+    /* margin-top: 50px; */
 
-}
+    padding: 0 20rem;
 
-.tee-time-page-component-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    width: 80%;
 }
 
 .tee-time-grid {
 
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-    
+    grid-row-gap: 0px;  */
+
+
 }

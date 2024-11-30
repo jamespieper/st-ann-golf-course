@@ -1,5 +1,23 @@
-* {
-    background-color: #333;
+
+.footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20rem;
+
+    background-color: #c5baaf;
+}
+
+.footer-center {
+    text-align: center;
+    
+    /* color: #1b512d; */
+}
+
+.footer-center h5 {
+    font-size: 18px;
 }
 
 .footer-grid {
@@ -11,6 +29,14 @@
 
     text-align: center;
 }
+
+img {
+    height: 100px;
+}
+
+/* #img-facebook {
+    height: 50px;
+} */
 
 
     

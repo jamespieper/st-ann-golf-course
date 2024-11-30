@@ -6,9 +6,7 @@ main {
 
     border: 1px solid black;
     border-radius: 5px;
-
-    width:300px;
-    height:150px;
+    
 }
 
 p {
@@ -34,6 +32,9 @@ button {
 .tee-time-card {
     margin-left: auto;
     margin-right: auto;
+    
+    width:250px;
+    
 }
 
 

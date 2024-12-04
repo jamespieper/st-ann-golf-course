@@ -1,4 +1,8 @@
 
+* {
+    color:rgb(231, 231, 231);
+}
+
 .footer {
 
     display: flex;
@@ -7,7 +11,7 @@
 
     padding: 0 20rem;
 
-    background-color: #c5baaf;
+    background-color: #363833;
 }
 
 .footer-center {

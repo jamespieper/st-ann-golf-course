@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+
+  --tan: #723842;
+}
 
 * {
     font-family: "Figtree", sans-serif;
@@ -10,4 +16,9 @@
 .main-header {
 
     margin-bottom: 75px;
+}
+
+.content {
+  background-color: #e8dacd;
+  padding-bottom: 20px;
 }
